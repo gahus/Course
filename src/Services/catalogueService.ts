@@ -2,7 +2,7 @@
 import {catchError, from, of, pipe, Observable, switchMap, map} from 'rxjs'
 import type {Produit} from '../types/produit'
 
-const BASE_URL = 'http://localhost:3001/produitsData'
+const BASE_URL = 'http://localhost:3000/produitsData'
 
 type PageResponse = {
     first: number,
