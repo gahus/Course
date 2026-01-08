@@ -1,0 +1,13 @@
+.cartouchepanier {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  border-bottom-style: solid;
+  border-right-style: solid;
+  background-color: rgb(238, 234, 234);
+}
+
+.ligneArticleImg{
+ height:40px;
+}

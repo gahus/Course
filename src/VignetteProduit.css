@@ -1,0 +1,30 @@
+.qualite {
+  background-color: coral;
+}
+
+.nutriscore {
+  background-color: yellow;
+  position: absolute;
+  top: 120px;
+  width: 20px;
+  height: 20px;
+}
+
+.produits {
+  position: relative;
+  z-index: 1;
+  float: left;
+  width: 198px;
+  height: 298px;
+  border-style: double;
+  border-color: blue;
+}
+
+.libelle {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.compteurTestContext{
+  font-size: small;
+}
