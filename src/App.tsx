@@ -10,6 +10,8 @@ import { range } from "./utils";
 import { ContextCompteur } from "./main";
 import type { Produit } from "./types/produit";
 import { loadPage } from "./Services/catalogueService";
+// Component Cartouche Panier
+import CartouchePaniers from "./Components/CartouchePaniers";
 
 function App() {
 
@@ -140,6 +142,7 @@ useEffect(() => {
           ))}
         </div>
         <CartouchePanier/>
+        <CartouchePaniers/>
       </div>
       <div className="taillePage">
         <select value={nbProduitPage} onChange={handleChangeNbproduitPage}>

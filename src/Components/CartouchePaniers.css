@@ -1,0 +1,27 @@
+
+.paniers {
+position: absolute;
+  top: 20px; /* Ajoute un peu d'espace en haut */
+  right: 20px; /* Ajoute un peu d'espace à droite */
+  display: inline-block;
+  background-color: #f0f0f0; /* Fond clair */
+  border-radius: 8px; /* Coins arrondis */
+  padding: 10px 15px; /* Espacement interne */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  cursor: pointer; /* Curseur "main" au survol */
+  transition: all 0.3s ease; /* Transition fluide pour les animations */
+}
+
+.paniers:hover {
+  background-color: #e0e0e0; /* Changement de couleur de fond */
+  transform: scale(1.05); /* Légère augmentation de la taille */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Ombre plus marquée */
+}
+
+.panierUnivers{
+    background-color: blue;
+}
+
+.panierElement{
+    background-color: #e0e0e0
+}
