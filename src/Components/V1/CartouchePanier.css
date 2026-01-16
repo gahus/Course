@@ -10,6 +10,7 @@ position: absolute;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
   cursor: pointer; /* Curseur "main" au survol */
   transition: all 0.3s ease; /* Transition fluide pour les animations */
+  z-index: 15;
 }
 
 .paniers:hover {
@@ -23,8 +24,21 @@ position: absolute;
 }
 
 .panierElement{
-    background-color: #e0e0e0
+    background-color: #e0e0e0;
+    color: #3e3634;
 }
 
+.boutonPlus{
+  position:absolute;
+  z-index: 16;
+}
 
+.univers-2{
+  background: #dd390e;
+  color: #fff;
+}
 
+.univers-4{
+  background: #3e3634;
+  color: #fff;
+}

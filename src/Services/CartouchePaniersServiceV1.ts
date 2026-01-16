@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000/paniers";
+const API_URL = "http://localhost:3002/paniers";
 
 // ---------------------------------------------------------
 // 1) Lecture complète

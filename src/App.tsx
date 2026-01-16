@@ -11,7 +11,7 @@ import { ContextCompteur } from "./main";
 import type { Produit } from "./types/produit";
 import { loadPage } from "./Services/catalogueService";
 // Component Cartouche Panier
-import CartouchePaniers from "./Components/CartouchePaniers";
+import CartouchePaniers from "./Components/V1/CartouchePaniers";
 
 function App() {
 
