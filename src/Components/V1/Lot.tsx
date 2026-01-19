@@ -1,11 +1,16 @@
 import type {FC} from "react";
 import type {Lot} from "../../types/CartouchePaniersV1/lot";
 
-const LotComponent: FC<Lot> = (lot) => {
+/* Props */
+type LotProps = {
+  lot: Lot;
+};
+
+const LotComponent: FC<LotProps> = (lotProp) => {
 
     return (
-        <div key={lot.id}>
-            {lot.gainsBriiAffiche} économisés
+        <div key={lotProp.lot.id}>
+            {lotProp.lot.gainsBriiAffiche} économisés
         </div>
     )
 

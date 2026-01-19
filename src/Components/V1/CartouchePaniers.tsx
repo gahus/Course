@@ -3,6 +3,10 @@ import type {FC} from "react";
 import { getAllPaniers, addProduit } from "../../Services/CartouchePaniersServiceV1"
 import "./CartouchePanier.css";
 import type {Paniers} from "../../types/CartouchePaniersV1/paniers";
+import type {Lot} from "../../types/CartouchePaniersV1/lot";
+import type {Produit} from "../../types/CartouchePaniersV1/produit";
+import LotComponent from "./Lot"
+import LigneArticle from "./LigneArticle";
 
 const CartouchePaniers: FC = () => {
 
@@ -32,13 +36,13 @@ const CartouchePaniers: FC = () => {
         setData(d);
     }
 
-    function renderElement(y:any) { 
+    function renderElement(y:Lot|Produit) { 
         switch (y.type) { 
-        case "Produit": return <div className="panierElement">{y.type} {y.id} {y.quantite} {y.totalAPayer}</div> 
-        case "Lot": return <div className="panierElement">{y.id}</div> 
-        default: return <div className="panierElement">Type inconnu</div> 
-    } 
-}
+        case "Produit": return <LigneArticle produit={y} />  
+        case "Lot": return <LotComponent lot={y} /> 
+        default: return <LigneArticle produit={y} /> 
+        } 
+    }
 
   return (
     <div>
