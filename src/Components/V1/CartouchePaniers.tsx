@@ -7,6 +7,7 @@ import type {Lot} from "../../types/CartouchePaniersV1/lot";
 import type {Produit} from "../../types/CartouchePaniersV1/produit";
 import LotComponent from "./Lot"
 import LigneArticle from "./LigneArticle";
+import CookiesComponent from "./Cookies";
 
 const CartouchePaniers: FC = () => {
 
@@ -51,7 +52,7 @@ const CartouchePaniers: FC = () => {
     </div>
     <div className="paniers">
         <h2>Mon Panier</h2>
-
+ 
         {data?.paniers.map(x=> <div className={x.cssUnivers} key={x.id} >
             {x.id}
             {x.elements.length}
@@ -71,6 +72,9 @@ const CartouchePaniers: FC = () => {
         </div>)}
 
         <pre>{JSON.stringify(data, null, 2)}</pre>
+
+        <CookiesComponent/>
+
     </div>
     </div>
   );
